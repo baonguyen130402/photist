@@ -12,6 +12,9 @@ module.exports = {
       },
       fontFamily: {
         "sans": ['manrope', 'sans-serif']
+      },
+      fontSize: {
+        "4.5xl": "38px"
       }
     },
   },
