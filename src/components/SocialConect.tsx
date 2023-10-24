@@ -3,8 +3,8 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
 
 export const SocialConnect = () => {
-  const navigate = useNavigate()
-  
+  const navigate = useNavigate();
+
   return (
     <div className="flex flex-col items-start font-sans w-full">
       <h1 className="text-f5 text-3xl mb-8 uppercase">or continue with</h1>

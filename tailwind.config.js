@@ -9,13 +9,40 @@ module.exports = {
         "f5": "#f5f5f5",
         "c6": "#c6c6c6",
         "semiBlue": "#3a99ad",
+        // "background": {
+        //   "background-color": "rgba(5, 5, 5, 1)",
+        //   "opacity": "1",
+        // },
       },
       fontFamily: {
-        "sans": ['manrope', 'sans-serif']
+        "sans": ["manrope", "sans-serif"],
       },
       fontSize: {
-        "4.5xl": "38px"
-      }
+        "4.5xl": "38px",
+      },
+      keyframes: {
+        slideUp: {
+          "0%": {
+            transform: "translateY(3%)",
+            opacity: "0",
+          },
+          "15%": {
+            transform: "translateY(2.0999999999999996%)",
+            opacity: "1",
+          },
+          "85%": {
+            transform: "translateY(-2.0999999999999996%)",
+            opacity: "1",
+          },
+          "100%": {
+            transform: "translateY(-3%)",
+            opacity: "0",
+          },
+        },
+      },
+      animation: {
+        "sliding-up": "slideUp 20s linear infinity",
+      },
     },
   },
   plugins: [],
