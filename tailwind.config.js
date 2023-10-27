@@ -19,6 +19,8 @@ module.exports = {
       },
       fontSize: {
         "4.5xl": "38px",
+        "3.5xl": "2.5rem",
+        "5.5xl": "3.23rem",
       },
       keyframes: {
         slideUp: {
