@@ -1,16 +1,26 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { SocialConnect } from "./SocialConect";
-import MyIMG from "../assets/png/JoinPage_PNG.png";
+import { MyImg_1, MyImg_2, MyImg_3 } from "../assets/png/JoinPage";
 
 export const Join = () => {
+  const imgArray = [
+    MyImg_1,
+    MyImg_2,
+    MyImg_3,
+  ];
+
+  const indexOfCurrentImg = Math.floor(Math.random() * (imgArray.length));
   const navigate = useNavigate();
 
   return (
     <div className="bg-black w-screen ">
       <div className="h-screen container mx-auto columns-12 flex flex-col items-start justify-around">
-        <div className="w-screen container grid grid-cols-12 object-fit">
-          <img src={MyIMG} className="col-start-3 col-span-8" />
+        <div className="w-screen container grid grid-cols-12">
+          <img
+            src={imgArray[indexOfCurrentImg]}
+            className="col-start-3 col-span-8 h-300 w-full"
+          />
         </div>
         <h1 className="text-f5 text-4xl w-2/3 font-semibold font-sans tracking-wider uppercase leading-normal">
           join the best community for photographers

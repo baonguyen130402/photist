@@ -22,6 +22,10 @@ module.exports = {
         "3.5xl": "2.5rem",
         "5.5xl": "3.23rem",
       },
+      transitionDelay: {
+        "250": "250ms",
+        "750": "750ms",
+      },
       keyframes: {
         slideUp: {
           "0%": {
@@ -41,9 +45,31 @@ module.exports = {
             opacity: "0",
           },
         },
+        slideDown: {
+          "0%": {
+            transform: "translateY(-1%)",
+            opacity: "0",
+          },
+          "15%": {
+            transform: "translateY(-.8%)",
+            opacity: "1",
+          },
+          "85%": {
+            transform: "translateY(.8%)",
+            opacity: "1",
+          },
+          "100%": {
+            transform: "translateY(1%)",
+            opacity: "0",
+          },
+        },
       },
       animation: {
-        "sliding-up": "slideUp 20s linear infinity",
+        "sliding-up": "slideUp 20s linear infinite",
+        "sliding-down": "slideDown 20s linear infinite",
+      },
+      height: {
+        "300": "299.7px",
       },
     },
   },

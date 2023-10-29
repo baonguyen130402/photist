@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
-import MyImage from "../assets/png/LoginPage_PNG.png";
+import MyImage from "../assets/png/LoginPage/LoginPage_PNG.png";
 
 export const Login = () => {
   const navigate = useNavigate();
