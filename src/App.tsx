@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import { Home, Join, Login } from "./components/index";
+import { Home, Join, Login, PreLoader } from "./components/index";
 
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -9,7 +9,7 @@ const App = () => {
     <>
       <Router>
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home/>} />
           <Route path="/join" element={<Join />} />
           <Route path="/login" element={<Login />} />
         </Routes>

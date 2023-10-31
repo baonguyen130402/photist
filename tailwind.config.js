@@ -8,11 +8,9 @@ module.exports = {
         "30": "#303030",
         "f5": "#f5f5f5",
         "c6": "#c6c6c6",
+        "05": "#050505",
+        "ccc": "#ccc",
         "semiBlue": "#3a99ad",
-        // "background": {
-        //   "background-color": "rgba(5, 5, 5, 1)",
-        //   "opacity": "1",
-        // },
       },
       fontFamily: {
         "sans": ["manrope", "sans-serif"],

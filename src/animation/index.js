@@ -21,8 +21,8 @@ export const preLoaderAnim = () => {
       ease: "Power3.easeOut",
     })
     .from(".texts-container span", {
-      duration: 1.5,
-      delay: 1,
+      duration: 1.0,
+      delay: 1.0,
       y: 70,
       skewY: 10,
       stagger: 0.4,
@@ -34,10 +34,6 @@ export const preLoaderAnim = () => {
       skewY: -20,
       stagger: 0.2,
       ease: "Power3.easeOut",
-    })
-    .to(".landing", {
-      duration: 0.05,
-      css: { overflowY: "hidden", height: "unset" },
     })
     .to("body", {
       duration: 0.1,
@@ -53,7 +49,7 @@ export const preLoaderAnim = () => {
     .to(
       ".preloader",
       {
-        duration: 1.5,
+        duration: 1.2,
         height: "0vh",
         ease: "Power3.easeOut",
         onComplete: mobileLanding(),
@@ -69,34 +65,6 @@ export const preLoaderAnim = () => {
         amount: 2,
       },
       ease: "power3.easeInOut",
-    })
-    .from(".links .item", {
-      duration: 0.5,
-      opacity: 0,
-      delay: window.innerWidth < 763 ? -3 : -0.6,
-      // y: 80,
-      stagger: {
-        amount: 0.5,
-      },
-      ease: "expo.easeOut",
-      onComplete: animateMainShape(),
-    })
-    .from(".main-circle", {
-      duration: 1,
-      opacity: 0,
-      ease: "power3.easeInOut",
-      onComplete: animateShapes(),
-    })
-    .from(".shapes .shape", {
-      duration: 1,
-      opacity: 0,
-      delay: -1,
-      ease: "power3.easeInOut",
-      stagger: 1,
-    })
-    .to(".preloader", {
-      duration: 0,
-      css: { display: "none" },
     });
 };
 
@@ -146,12 +114,6 @@ export const openMenu = () => {
       },
       "-=.3",
     );
-
-  // change cursor color when nav is open
-  // tl.to(".cursor", {
-  //   delay: -1,
-  //   css: { className: "+=cursor-active" },
-  // }).to(".cursor2", { delay: -1, css: { className: "+=cursor2-active" } });
 };
 
 export const closeMenu = () => {
@@ -183,10 +145,6 @@ export const closeMenu = () => {
       duration: 0.05,
       css: { display: "none" },
     });
-
-  // tl.to(".cursor-active", {
-  //   css: { className: "+=cursor" },
-  // }).to(".cursor2-active", { css: { className: "+=cursor2" } });
 };
 
 // recurrent animations
