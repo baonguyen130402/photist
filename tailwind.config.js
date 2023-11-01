@@ -61,10 +61,16 @@ module.exports = {
             opacity: "0",
           },
         },
+        loading: {
+          "100%": {
+            transform: "rotate(360deg)"
+          }
+        }
       },
       animation: {
         "sliding-up": "slideUp 20s linear infinite",
         "sliding-down": "slideDown 20s linear infinite",
+        "loading": "loading 1s ease infinite"
       },
       height: {
         "300": "299.7px",

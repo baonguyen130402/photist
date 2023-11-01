@@ -1,5 +1,4 @@
 import { PreLoader } from "./Preloader";
-import { MyImg_1 } from "../assets/png/JoinPage";
 import {
   Img1,
   Img10,
@@ -17,22 +16,21 @@ import {
   Img8,
   Img9,
 } from "../assets/png/HomePage";
-import Logo from "../assets/png/HomePage/Logo.png";
+import Logo from "../assets/png/Icons/logomain.png";
 import { useNavigate } from "react-router-dom";
-import { useEffect } from "react";
 
 export const Home = () => {
   const navigate = useNavigate();
 
   const slide1 = [Img1, Img2, Img3];
-  const slide2 = [Img4, Img5, Img6];
+  const slide2 = [Img4, Img15, Img11];
   const slide3 = [Img7, Img8, Img9];
   const slide4 = [Img10, Img11, Img12];
   const slide5 = [Img13, Img14, Img15];
 
   return (
     <div className="h-screen overflow-hidden relative">
-      <PreLoader content="Build For You" />;
+      <PreLoader />;
       <div className="w-full h-full bg-black flex translate-x-0 translate-y-0 rotate-0 skew-x-0 skew-y-0 scale-x-125 scale-y-125">
         <div className="flex flex-col flex-1 h-screen mr-1 ml-2 overflow-hidden animate-sliding-up delay-0">
           {slide1.map((img, id) => (
@@ -111,7 +109,7 @@ export const Home = () => {
           </div>
           <footer className="flex justify-between items-center text-white flex-3 order-last">
             <h1 className="uppercase">power by google ai</h1>
-            <ul className="flex justify-around w-1/3">
+            <ul className="flex justify-around w-1/3 cursor-pointer">
               <li className="uppercase">app</li>
               <li className="uppercase">blog</li>
               <li className="uppercase">extensions</li>
