@@ -99,6 +99,10 @@ export const Art = () => {
 
   const [check, setCheck] = useState(false);
 
+  useEffect(() => {
+    document.title = "Art";
+  });
+
   return (
     <div className="relative">
       <Navbar title="" atDiscover={false} />
@@ -106,15 +110,14 @@ export const Art = () => {
         {data.map((img, idx) => (
           <div
             key={idx}
-            className="mb-2 hover:bg-white hover:opacity-90 group relative"
+            className="mb-2 hover:bg-white hover:opacity-90 group relative duration-500"
           >
             <img
               src={img}
             />
-
             <div
               onClick={() => setCheck(!check)}
-              className="hidden group-hover:block absolute bottom-2 right-2 hover:animate-fadeout hover:opacity-100"
+              className="hidden group-hover:block absolute bottom-2 right-2 opacity-100 hover:opacity-80 duration-300 cursor-pointer"
             >
               {check
                 ? (

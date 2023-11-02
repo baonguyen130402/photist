@@ -34,7 +34,7 @@ export const Login = () => {
               <div className="col-span-6 relative">
                 <FontAwesomeIcon
                   onClick={() => navigate(-1)}
-                  className="text-white text-5xl font-thin mb-4"
+                  className="text-white text-5xl font-thin mb-4 duration-300 hover:text-[#ccc] cursor-pointer"
                   icon={faArrowLeft}
                   size="sm"
                 />
@@ -57,12 +57,12 @@ export const Login = () => {
                     className="col-span-3 row-start-2 text-f5 bg-transparent focus:outline-none border border-t-0 border-l-0 border-r-0 pb-1 placeholder:text-sm text-base"
                   />
                 </div>
-                <a className="text-f5 text-sm tracking-wider">
+                <a className="text-f5 text-sm tracking-wider hover:underline cursor-pointer duration-300 hover:text-[#ccc]">
                   Forgot your password?
                 </a>
                 <button
                   onClick={() => navigate("/discover")}
-                  className="uppercase block mt-14 bg-f5 text-base font-semibold py-2 px-2.5 row-start-7 tracking-wide rounded-3xl"
+                  className="uppercase block mt-14 bg-f5 text-sm font-semibold py-2 px-3 row-start-7 tracking-wide rounded-3xl duration-300 hover:bg-[#ccc]"
                 >
                   login
                 </button>
@@ -80,17 +80,17 @@ export const Login = () => {
             <div className="container mx-auto grid grid-cols-12 gap-6 mt-6">
               <div className="col-span-6 col-start-1">
                 <div className="grid grid-cols-6 gap-6">
-                  <button className="col-start-1 bg-f5 py-1.5 col-span-3 text-25 text-base font-bold tracking-wider rounded-3xl uppercase">
+                  <button className="col-start-1 bg-f5 py-1.5 col-span-3 text-25 text-base font-bold tracking-wider rounded-3xl uppercase duration-300 hover:bg-[#ccc]">
                     facebook
                   </button>
-                  <button className="col-start-4 bg-f5 py-1.5 col-span-3 text-25 text-base font-bold tracking-wider rounded-3xl uppercase">
+                  <button className="col-start-4 bg-f5 py-1.5 col-span-3 text-25 text-base font-bold tracking-wider rounded-3xl uppercase duration-300 hover:bg-[#ccc]">
                     twitter
                   </button>
                 </div>
               </div>
               <div className="col-span-6 col-start-7">
                 <div className="grid grid-cols-6 gap-6">
-                  <button className="col-span-3 col-start-1 py-2 bg-f5 text-25 text-base font-bold tracking-wider rounded-3xl uppercase">
+                  <button className="col-span-3 col-start-1 py-2 bg-f5 text-25 text-base font-bold tracking-wider rounded-3xl uppercase duration-300 hover:bg-[#ccc]">
                     google
                   </button>
                 </div>

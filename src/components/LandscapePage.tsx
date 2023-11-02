@@ -29,7 +29,7 @@ import {
   Img8,
   Img9,
 } from "../assets/png/LandscapePage";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const Landscape = () => {
   const data = [
@@ -62,6 +62,10 @@ export const Landscape = () => {
 
   const [check, setCheck] = useState(false);
 
+  useEffect(() => {
+    document.title = "Landscape";
+  });
+
   return (
     <div className="relative">
       <Navbar title="" atDiscover={false} />
@@ -77,7 +81,7 @@ export const Landscape = () => {
 
             <div
               onClick={() => setCheck(!check)}
-              className="hidden group-hover:block absolute bottom-2 right-2 hover:animate-fadeout hover:opacity-100 cursor-pointer"
+              className="hidden group-hover:block absolute bottom-2 right-2 opacity-100 hover:opacity-80 duration-300 cursor-pointer"
             >
               {check
                 ? (

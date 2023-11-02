@@ -4,10 +4,10 @@ import Logo from "../assets/png/Icons/logomain.png";
 
 import {
   analyse,
-  atSign,
+  artwork,
   cart,
+  commercial,
   discover,
-  dollar,
   notify,
   search,
   user,
@@ -25,7 +25,7 @@ export const Navbar = (props: Title) => {
     <>
       {props.atDiscover
         ? (
-          <nav className="bg-black fixed top-0 right-0 left-0 p-4 z-50">
+          <nav className="bg-black fixed top-0 right-0 left-0 p-4 z-50 cursor-default">
             <div className="text-white flex justify-between items-center">
               <div className="flex items-center group">
                 <img className="w-8" src={Logo} />
@@ -65,25 +65,52 @@ export const Navbar = (props: Title) => {
                 </button>
                 <ul className="flex justify-between items-center">
                   <li className="cursor-pointer">
-                    <img src={analyse} />
+                    <img
+                      src={analyse}
+                      className="mr-2 hover:opacity-80 duration-300"
+                    />
                   </li>
                   <li className="cursor-pointer">
-                    <img src={discover} className="w-10 mr-2" />
+                    <img
+                      src={discover}
+                      className="w-10 mr-2 hover:opacity-80 duration-300"
+                    />
                   </li>
                   <li className="cursor-pointer">
-                    <img src={search} className="w-10 mr-2" />
+                    <img
+                      src={search}
+                      className="w-10 mr-2 hover:opacity-80 duration-300"
+                    />
                   </li>
                   <li className="cursor-pointer">
-                    <img src={atSign} className="w-9 mr-4" />
+                    <img
+                      src={artwork}
+                      className="w-10 mr-2 hover:opacity-80 duration-300"
+                    />
                   </li>
                   <li className="cursor-pointer">
-                    <img src={dollar} className="w-5 mr-4" />
+                    <img
+                      src={commercial}
+                      className="w-10 mr-2 hover:opacity-80 duration-300"
+                    />
                   </li>
                   <li className="cursor-pointer">
-                    <img src={notify} className="w-10 mr-2" />
+                    <img
+                      src={cart}
+                      className="w-10 mr-2 hover:opacity-80 duration-300"
+                    />
                   </li>
                   <li className="cursor-pointer">
-                    <img src={user} className="w-10" />
+                    <img
+                      src={notify}
+                      className="w-10 mr-2 hover:opacity-80 duration-300"
+                    />
+                  </li>
+                  <li className="cursor-pointer">
+                    <img
+                      src={user}
+                      className="w-10 hover:opacity-80 duration-300"
+                    />
                   </li>
                 </ul>
               </div>
@@ -109,25 +136,52 @@ export const Navbar = (props: Title) => {
                 </button>
                 <ul className="flex justify-between items-center">
                   <li className="cursor-pointer">
-                    <img src={analyse} />
+                    <img
+                      src={analyse}
+                      className="mr-2 jhover:opacity-80 duration-300"
+                    />
                   </li>
                   <li className="cursor-pointer">
-                    <img src={discover} className="w-10 mr-2" />
+                    <img
+                      src={discover}
+                      className="w-10 mr-2 hover:opacity-80 duration-300"
+                    />
                   </li>
                   <li className="cursor-pointer">
-                    <img src={search} className="w-10 mr-2" />
+                    <img
+                      src={search}
+                      className="w-10 mr-2 hover:opacity-80 duration-300"
+                    />
                   </li>
                   <li className="cursor-pointer">
-                    <img src={atSign} className="w-9 mr-4" />
+                    <img
+                      src={artwork}
+                      className="w-10 mr-2 hover:opacity-80 duration-300"
+                    />
                   </li>
                   <li className="cursor-pointer">
-                    <img src={dollar} className="w-5 mr-4" />
+                    <img
+                      src={commercial}
+                      className="w-10 mr-2 hover:opacity-80 duration-300"
+                    />
                   </li>
                   <li className="cursor-pointer">
-                    <img src={notify} className="w-10 mr-2" />
+                    <img
+                      src={cart}
+                      className="w-10 mr-2 hover:opacity-80 duration-300"
+                    />
                   </li>
                   <li className="cursor-pointer">
-                    <img src={user} className="w-10" />
+                    <img
+                      src={notify}
+                      className="w-10 mr-2 hover:opacity-80 duration-300"
+                    />
+                  </li>
+                  <li className="cursor-pointer">
+                    <img
+                      src={user}
+                      className="w-10 hover:opacity-80 duration-300"
+                    />
                   </li>
                 </ul>
               </div>

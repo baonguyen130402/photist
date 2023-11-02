@@ -1,10 +1,10 @@
-import analyse from "./analyse.png";
-import atSign from "./at-sign.png";
-import cart from "./cart.png";
-import discover from "./discover.png";
-import dollar from "./dollar.png";
-import search from "./search.png";
-import notify from "./notify.png";
-import user from "./user.png";
+import analyse from "./analyse.svg";
+import artwork from "./artwork.svg";
+import cart from "./cart.svg";
+import discover from "./discover.svg";
+import commercial from "./commercial.svg";
+import search from "./search.svg";
+import notify from "./notify.svg";
+import user from "./user.svg";
 
-export { analyse, atSign, cart, discover, dollar, notify, search, user };
+export { analyse, artwork, cart, commercial, discover, notify, search, user };

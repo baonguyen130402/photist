@@ -101,6 +101,11 @@ export const Discover = () => {
   const [check, setCheck] = useState(false);
   const [loading, setLoading] = useState(false);
 
+  //Set title
+  useEffect(() => {
+    document.title = "Discover";
+  });
+
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
@@ -125,7 +130,7 @@ export const Discover = () => {
 
                 <div
                   onClick={() => setCheck(!check)}
-                  className="hidden group-hover:block absolute bottom-2 right-2 hover:animate-fadeout hover:opacity-100 cursor-pointer"
+                  className="hidden group-hover:block absolute bottom-2 right-2 opacity-100 hover:opacity-80 duration-300 cursor-pointer"
                 >
                   {check
                     ? (

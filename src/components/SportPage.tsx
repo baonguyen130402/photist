@@ -17,7 +17,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { Navbar } from "./Navbar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export const Sport = () => {
   const data = [
@@ -64,6 +64,10 @@ export const Sport = () => {
 
   const [check, setCheck] = useState(false);
 
+  useEffect(() => {
+    document.title = "Sport";
+  });
+
   return (
     <div className="relative">
       <Navbar title="" atDiscover={false} />
@@ -79,7 +83,7 @@ export const Sport = () => {
 
             <div
               onClick={() => setCheck(!check)}
-              className="hidden group-hover:block absolute bottom-2 right-2 hover:animate-fadeout hover:opacity-100 cursor-pointer"
+              className="hidden group-hover:block absolute bottom-2 right-2 opacity-100 hover:opacity-80 duration-300 cursor-pointer"
             >
               {check
                 ? (

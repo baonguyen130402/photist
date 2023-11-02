@@ -68,7 +68,7 @@ export const Join = () => {
                 <p className="text-f5 font-sans uppercase text-sm font-semibold tracking-wide mb-4">
                   by creating account, you accept out terms
                 </p>
-                <button className="text-25 bg-f5 text-sm font-sans font-semibold uppercase py-1.5 px-6 rounded-2xl hover:bg-gray-300">
+                <button className="text-25 bg-f5 text-sm font-sans font-semibold uppercase py-1.5 px-6 rounded-2xl duration-300 hover:bg-gray-300">
                   join
                 </button>
               </div>

@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheck } from "@fortawesome/free-solid-svg-icons";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   Img1,
   Img10,
@@ -67,6 +67,10 @@ export const Portrait = () => {
 
   const [check, setCheck] = useState(false);
 
+  useEffect(() => {
+    document.title = "Portrait";
+  });
+
   return (
     <div className="relative">
       <Navbar title="" atDiscover={false} />
@@ -82,7 +86,7 @@ export const Portrait = () => {
 
             <div
               onClick={() => setCheck(!check)}
-              className="hidden group-hover:block absolute bottom-2 right-2 hover:animate-fadeout hover:opacity-100 cursor-pointer"
+              className="hidden group-hover:block absolute bottom-2 right-2 opacity-100 hover:opacity-80 duration-300 cursor-pointer"
             >
               {check
                 ? (

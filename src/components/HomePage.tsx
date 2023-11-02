@@ -87,18 +87,18 @@ export const Home = () => {
         <div className="container mx-auto py-6 flex flex-col justify-between h-screen">
           <nav className="flex justify-between">
             <div>
-              <img src={Logo} className="text-white" />
+              <img src={Logo} className="text-white cursor-pointer" />
             </div>
             <div>
               <button
                 onClick={() => navigate("join")}
-                className="uppercase bg-white text-sm py-1.5 px-2 tracking-wider rounded-3xl"
+                className="uppercase bg-white text-sm py-1.5 px-3 tracking-wider ease-linear duration-300 hover:bg-[#ccc] rounded-3xl"
               >
                 join
               </button>
               <button
                 onClick={() => navigate("login")}
-                className="uppercase bg-transparent text-sm py-1.5 text-white px-2 tracking-wider rounded-3xl"
+                className="uppercase bg-transparent text-sm py-1.5 text-white px-2 tracking-wider rounded-3xl duration-300 hover:text-[#ccc]"
               >
                 Login
               </button>
