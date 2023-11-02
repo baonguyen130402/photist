@@ -31,11 +31,11 @@ module.exports = {
             opacity: "0",
           },
           "15%": {
-            transform: "translateY(2.0999999999999996%)",
+            transform: "translateY(1.0999999999999996%)",
             opacity: "1",
           },
           "85%": {
-            transform: "translateY(-2.0999999999999996%)",
+            transform: "translateY(-1.0999999999999996%)",
             opacity: "1",
           },
           "100%": {
@@ -45,7 +45,7 @@ module.exports = {
         },
         slideDown: {
           "0%": {
-            transform: "translateY(-1%)",
+            transform: "translateY(-2%)",
             opacity: "0",
           },
           "15%": {
@@ -57,7 +57,7 @@ module.exports = {
             opacity: "1",
           },
           "100%": {
-            transform: "translateY(1%)",
+            transform: "translateY(2%)",
             opacity: "0",
           },
         },

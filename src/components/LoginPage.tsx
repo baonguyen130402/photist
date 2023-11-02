@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate } from "react-router-dom";
-import { MyImg_1, MyImg_2, MyImg_3 } from "../assets/png/JoinPage";
+import { MyImg_1, MyImg_2, MyImg_3 } from "../assets/png/LoginPage";
 import { Loading } from "./LoadingPage";
 
 export const Login = () => {
@@ -16,7 +16,7 @@ export const Login = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 1500);
   }, []);
 
   return (
