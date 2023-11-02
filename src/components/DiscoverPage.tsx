@@ -1,14 +1,3 @@
-import Logo from "../assets/png/Icons/logomain.png";
-import {
-  analyse,
-  atSign,
-  cart,
-  discover,
-  dollar,
-  notify,
-  search,
-  user,
-} from "../assets/png/Icons";
 import {
   Img1,
   Img10,
@@ -56,6 +45,8 @@ import {
 } from "../assets/png/DiscoverPage";
 import { useEffect, useState } from "react";
 import { Loading } from "./LoadingPage";
+import { useNavigate, useNavigation } from "react-router-dom";
+import { Navbar } from "./Navbar";
 
 export const Discover = () => {
   const data = [
@@ -105,6 +96,7 @@ export const Discover = () => {
     Img43,
   ];
 
+  const navigate = useNavigate();
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -118,58 +110,7 @@ export const Discover = () => {
     <>
       {loading ? <Loading /> : (
         <div className="relative">
-          <nav className="bg-black fixed top-0 right-0 left-0 p-4 z-50">
-            <div className="text-white flex justify-between items-center">
-              <div className="flex items-center group">
-                <img className="w-8" src={Logo} />
-                <h1 className="text-4xl ml-2">
-                  D I S C O V E R
-                </h1>
-                <ul className="hidden group-hover:flex items-center justify-around bg-black text-white absolute top-[56px] h-16 right-0 left-0">
-                  <li className="uppercase font-semibold tracking-wider cursor-pointer">
-                    sport
-                  </li>
-                  <li className="uppercase font-semibold tracking-wider cursor-pointer">
-                    art
-                  </li>
-                  <li className="uppercase font-semibold tracking-wider cursor-pointer">
-                    portrait
-                  </li>
-                  <li className="uppercase font-semibold tracking-wider cursor-pointer">
-                    landscape
-                  </li>
-                </ul>
-              </div>
-              <div className="flex items-center justify-between">
-                <button className="uppercase border border-gray-700 text-[0.625rem] px-2 py-0.5 rounded-lg mr-6 hover:bg-[#ccc] hover:border-non ease-in-out duration-300">
-                  get pro
-                </button>
-                <ul className="flex justify-between items-center">
-                  <li className="cursor-pointer">
-                    <img src={analyse} />
-                  </li>
-                  <li className="cursor-pointer">
-                    <img src={discover} className="w-10 mr-2" />
-                  </li>
-                  <li className="cursor-pointer">
-                    <img src={search} className="w-10 mr-2" />
-                  </li>
-                  <li className="cursor-pointer">
-                    <img src={atSign} className="w-9 mr-4" />
-                  </li>
-                  <li className="cursor-pointer">
-                    <img src={dollar} className="w-5 mr-4" />
-                  </li>
-                  <li className="cursor-pointer">
-                    <img src={notify} className="w-10 mr-2" />
-                  </li>
-                  <li className="cursor-pointer">
-                    <img src={user} className="w-10" />
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </nav>
+          <Navbar title="D I S C O V E R" atDiscover={true} />
           <div className="columns-6 absolute bg-black top-16">
             {data.map((img, idx) => (
               <div

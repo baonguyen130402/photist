@@ -15,6 +15,11 @@ export const Join = () => {
 
   const [loading, setLoading] = useState(false);
 
+  // Set title
+  useEffect(() => {
+    document.title = "Join with us";
+  });
+
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {

@@ -18,6 +18,7 @@ import {
 } from "../assets/png/HomePage";
 import Logo from "../assets/png/Icons/logomain.png";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -27,6 +28,10 @@ export const Home = () => {
   const slide3 = [Img7, Img8, Img9];
   const slide4 = [Img10, Img11, Img12];
   const slide5 = [Img13, Img14, Img15];
+
+  useEffect(() => {
+    document.title = "Photist";
+  }, []);
 
   return (
     <div className="h-screen overflow-hidden relative">

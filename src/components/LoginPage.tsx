@@ -12,6 +12,11 @@ export const Login = () => {
   const images = [MyImg_1, MyImg_2, MyImg_3];
   const indexOfCurrentImg = Math.floor(Math.random() * (images.length));
 
+  //Set title
+  useEffect(() => {
+    document.title = "Login";
+  });
+
   useEffect(() => {
     setLoading(true);
     setTimeout(() => {
@@ -55,7 +60,10 @@ export const Login = () => {
                 <a className="text-f5 text-sm tracking-wider">
                   Forgot your password?
                 </a>
-                <button onClick={() => navigate("/discover")} className="uppercase block mt-14 bg-f5 text-base font-semibold py-2 px-2.5 row-start-7 tracking-wide rounded-3xl">
+                <button
+                  onClick={() => navigate("/discover")}
+                  className="uppercase block mt-14 bg-f5 text-base font-semibold py-2 px-2.5 row-start-7 tracking-wide rounded-3xl"
+                >
                   login
                 </button>
                 <div className="grid grid-cols-6 gap-6 absolute bottom-0">
