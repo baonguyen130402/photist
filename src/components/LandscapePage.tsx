@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { Navbar } from "./Navbar";
 import {
   Img1,
@@ -26,6 +29,7 @@ import {
   Img8,
   Img9,
 } from "../assets/png/LandscapePage";
+import { useState } from "react";
 
 export const Landscape = () => {
   const data = [
@@ -56,11 +60,39 @@ export const Landscape = () => {
     Img25,
   ];
 
+  const [check, setCheck] = useState(false);
+
   return (
     <div className="relative">
       <Navbar title="" atDiscover={false} />
       <div className="absolute top-16 px-4 bg-black columns-6">
-        {data.map((img, idx) => <img key={idx} src={img} className="mb-3" />)}
+        {data.map((img, idx) => (
+          <div
+            key={idx}
+            className="mb-2 hover:bg-white hover:opacity-90 group relative"
+          >
+            <img
+              src={img}
+            />
+
+            <div
+              onClick={() => setCheck(!check)}
+              className="hidden group-hover:block absolute bottom-2 right-2 hover:animate-fadeout hover:opacity-100 cursor-pointer"
+            >
+              {check
+                ? (
+                  <div className="bg-white text-black h-8 w-8 flex justify-center items-center">
+                    <FontAwesomeIcon icon={faCheck} />
+                  </div>
+                )
+                : (
+                  <div className="bg-black text-white h-8 w-8 flex justify-center items-center">
+                    <FontAwesomeIcon icon={faPlus} />
+                  </div>
+                )}
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

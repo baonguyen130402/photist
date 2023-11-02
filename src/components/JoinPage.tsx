@@ -38,15 +38,15 @@ export const Join = () => {
                 className="col-start-3 col-span-8 h-300 w-full"
               />
             </div>
-            <h1 className="text-f5 text-4xl w-2/3 font-semibold font-sans tracking-wider uppercase leading-normal">
-              join the best community for photographers
+            <h1 className="text-f5 text-4xl w-full text-center font-semibold font-sans tracking-wider uppercase leading-normal">
+              the best community for photographers
             </h1>
             <div className="w-full font-sans">
               <div className=" grid grid-cols-12 gap-x-4">
                 <input
                   type="text"
                   placeholder="NAME"
-                  className="col-span-3 text-f5 bg-transparent focus:outline-none border border-t-0 border-l-0 border-r-0 pb-1"
+                  className="col-span-3 text-f5 bg-transparent focus:placeholder-none focus:outline-none border border-t-0 border-l-0 border-r-0 pb-1"
                 />
                 <input
                   type="email"

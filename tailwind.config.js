@@ -63,14 +63,32 @@ module.exports = {
         },
         loading: {
           "100%": {
-            transform: "rotate(360deg)"
-          }
-        }
+            transform: "rotate(360deg)",
+          },
+        },
+        fadeIn: {
+          "100%": {
+            opacity: "1",
+          },
+        },
+        fadeOut: {
+          "0%": {
+            opacity: "1",
+          },
+          "50%": {
+            opacity: "0.8",
+          },
+          "100%": {
+            opacity: "0.6",
+          },
+        },
       },
       animation: {
         "sliding-up": "slideUp 20s linear infinite",
         "sliding-down": "slideDown 20s linear infinite",
-        "loading": "loading 1s ease infinite"
+        "loading": "loading 1s ease infinite",
+        "fadein": "fadeIn 1s linear",
+        "fadeout": "fadeOut 0.8s linear 1",
       },
       height: {
         "300": "299.7px",

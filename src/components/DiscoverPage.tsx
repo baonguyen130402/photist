@@ -44,8 +44,10 @@ import {
   Img9,
 } from "../assets/png/DiscoverPage";
 import { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCheck } from "@fortawesome/free-solid-svg-icons";
+import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import { Loading } from "./LoadingPage";
-import { useNavigate, useNavigation } from "react-router-dom";
 import { Navbar } from "./Navbar";
 
 export const Discover = () => {
@@ -96,7 +98,7 @@ export const Discover = () => {
     Img43,
   ];
 
-  const navigate = useNavigate();
+  const [check, setCheck] = useState(false);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
@@ -120,8 +122,22 @@ export const Discover = () => {
                 <img
                   src={img}
                 />
-                <div className="hidden group-hover:flex items-center justify-center bg-black text-white opacity-90 hover:opacity-60 h-6 w-6 absolute bottom-2 right-2 leading-none">
-                  <span className="text-white">+</span>
+
+                <div
+                  onClick={() => setCheck(!check)}
+                  className="hidden group-hover:block absolute bottom-2 right-2 hover:animate-fadeout hover:opacity-100 cursor-pointer"
+                >
+                  {check
+                    ? (
+                      <div className="bg-white text-black h-8 w-8 flex justify-center items-center">
+                        <FontAwesomeIcon icon={faCheck} />
+                      </div>
+                    )
+                    : (
+                      <div className="bg-black text-white h-8 w-8 flex justify-center items-center">
+                        <FontAwesomeIcon icon={faPlus} />
+                      </div>
+                    )}
                 </div>
               </div>
             ))}
