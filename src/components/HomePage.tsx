@@ -16,7 +16,7 @@ import {
   Img8,
   Img9,
 } from "../assets/png/HomePage";
-import Logo from "../assets/png/Icons/logomain.png";
+import Logo from "../assets/png/Icons/logomain.svg";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 

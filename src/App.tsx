@@ -2,6 +2,7 @@ import "./App.css";
 import {
   Art,
   Discover,
+  GetPro,
   Home,
   Join,
   Landscape,
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/discover/art" element={<Art />} />
         <Route path="/discover/portrait" element={<Portrait />} />
         <Route path="/discover/landscape" element={<Landscape />} />
+        <Route path="/getpro" element={<GetPro />} />
       </Routes>
     </Router>
   );

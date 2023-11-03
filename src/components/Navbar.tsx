@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-import Logo from "../assets/png/Icons/logomain.png";
+import Logo from "../assets/png/Icons/logomain.svg";
 
 import {
   analyse,
@@ -60,7 +60,9 @@ export const Navbar = (props: Title) => {
                 </ul>
               </div>
               <div className="flex items-center justify-between">
-                <button className="uppercase border border-gray-700 text-[0.625rem] px-2 py-0.5 rounded-lg mr-6 hover:bg-[#ccc] hover:border-non ease-in-out duration-300">
+                <button
+                  onClick={() => navigate("/getpro")}
+                  className="uppercase border border-gray-700 text-[0.625rem] px-2 py-0.5 rounded-lg mr-6 hover:bg-[#ccc] hover:border-non ease-in-out duration-300">
                   get pro
                 </button>
                 <ul className="flex justify-between items-center">
