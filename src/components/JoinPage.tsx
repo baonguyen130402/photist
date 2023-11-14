@@ -11,6 +11,8 @@ export const Join = () => {
     MyImg_2,
     MyImg_3,
   ];
+
+  const changedVariable = 0
   const indexOfCurrentImg = Math.floor(Math.random() * (images.length));
 
   const [loading, setLoading] = useState(false);
@@ -35,10 +37,10 @@ export const Join = () => {
             <div className="w-screen container grid grid-cols-12">
               <img
                 src={images[indexOfCurrentImg]}
-                className="col-start-3 col-span-8 h-300 w-full"
+                className="col-start-3 col-span-8 h-300 w-full lg:h-[500px]"
               />
             </div>
-            <h1 className="text-f5 text-4xl w-full text-center font-semibold font-sans tracking-wider uppercase leading-normal">
+            <h1 className="text-f5 text-4xl w-full lg:-mt-28 text-center font-semibold font-sans tracking-wider uppercase leading-normal">
               the best community for photographers
             </h1>
             <div className="w-full font-sans">
